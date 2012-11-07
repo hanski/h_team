@@ -1,0 +1,25 @@
+<?php //echo $this->showTemplateVars(); ?>
+<div class="<?php echo $this->class; ?> block"<?php echo $this->cssID; ?><?php if ($this->style): ?> style="<?php echo $this->style; ?>"<?php endif; ?>>
+<?php if ($this->headline): ?>
+
+<<?php echo $this->hl; ?>><?php echo $this->headline; ?></<?php echo $this->hl; ?>>
+<?php endif; ?>
+
+
+<?php foreach($this->team as $team) echo $team; ?>
+<?php //foreach($this->players as $player) echo $player; ?>
+<?php //print_r($this->team); ?>
+<?php
+/*
+foreach($this->hanski_team['players'] as $player) : ?>
+	<div class="player block">
+		<?php if($player[addImage]): ?>
+		<figure class="image_container">
+			<img src="<?php echo $player[singleSRC]; ?>">
+		</figure>
+		<?php endif; ?>
+		<?php echo "$player[firstname] $player[lastname] (#$player[jerseyNumber])"; ?>
+	</div>
+<?php endforeach; */?>
+
+</div>
